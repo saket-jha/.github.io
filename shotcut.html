@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Video Editor</title>
+    </head>
+
+<style>
+   
+</style>
+
+<body>
+    <header>
+     <center>
+         <img src="./img/head2.JPG" class="img-fluid">
+     </center>   
+    </header>
+
+    <div class="navbar">
+        <a href="./index.html">Ffmpeg</a>
+        <a href="./shotcut.html">शॉटकट</a>
+        <a href="./vidhi.html">सरल प्रयोग विधि</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">डॉक्यूमेंटेशन
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            
+            <a href="dffmpeg.html">Ffmpeg</a>
+            <a href="dshotcut.html">शॉटकट</a>
+            
+     
+          </div>
+        </div>
+    </div>
+      <center>
+        <marquee onmouseover="this.stop();" onmouseout="this.start();">डिस्क्लेमर: इस पोर्टल पर उपलब्ध सामग्री पर वेबसाइट किसी तरह के कॉपीराइट
+             का दावा नहीं करता है,  यह केवल परोपकार की भावना से यहां उपलब्ध कराया गया है॥</marquee>
+
+    <h2>शॉटकट</h2>
+<select id="select" class="dropdown">
+    <option value="0">Select OS</option>
+    <option value="https://drive.google.com/file/d/17Nyd1Wvdrhy-sS-5UEoWz_-gUPhbwDg5">Windows 32 bit</option>
+    <option value="2">Windows 64 bit</option>
+    <option value="https://drive.google.com/file/d/1uNJn0mfmsQWgpAfLFOGQ-MrANTJmJzfv">MacOs 64 bit</option>
+    <option value="4">Linux 64 bit</option>
+    <option value="https://drive.google.com/file/d/123Ce2Q3I9yeHtvhEKgWQ2_TmbHdIMKBI">Source Code</option>
+</select>
+
+
+<input type="button" id="download" onclick="window.location.href=document.getElementById('select').value" value="Download" class="btn" style="display:none" />
+
+<br><br><br>
+<h3 style="color: red;">डाउनलोड करने की विधि:-</h3>
+   <p style="font-size: larger;">
+    1. सबसे पहले अपना OS चुनें <br>
+    2. Download बटन दबा दें,  आपका चुना हुआ फाईल डाउनलोड हो जाएगा॥ </p>
+   </center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+$(function() {
+    $('#select').change(function(){
+        if ($(this).val() == "0") {
+            $('#download').hide();
+        } else {
+            $('#download').show();
+ 
+        }
+
+       
+    });
+});
+</script>
+
+</body>
+</html>
