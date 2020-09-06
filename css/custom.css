@@ -25,3 +25,11 @@ marquee{
   font-size: larger;
   background-color: rgb(2, 68, 43);
 }
+
+div.b{
+  width: 80%;
+  border: black;
+  border-color: black;
+  word-wrap: break-word;
+  
+}
