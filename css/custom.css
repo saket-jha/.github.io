@@ -45,6 +45,8 @@ p.b{
 span.glow{
   position: relative;
   margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 2em;
   letter-spacing: 3px;
   overflow: hidden;
