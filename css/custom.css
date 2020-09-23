@@ -33,3 +33,34 @@ div.b{
   word-wrap: break-word;
   
 }
+
+p.b{
+  width: 80%;
+  border: black;
+  border-color: black;
+  word-wrap: break-word;
+  
+}
+
+span.glow{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(29, 156, 4), rgb(246, 250, 7), rgb(245, 7, 7), rgb(5, 49, 247));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
